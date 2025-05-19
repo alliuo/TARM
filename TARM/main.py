@@ -18,7 +18,6 @@ out_tree_path = os.path.abspath('./out/lut_tree.csv')
 out_8x8_path = os.path.abspath('./out/mul_8x8.csv')
 eval_8x8_dir = os.path.abspath('./tmp/eval_8x8')
 
-'''
 banner = """
 /-----------------------------------------------------\\
 |                    TARM Framework                   |
@@ -59,7 +58,7 @@ print("---Multiplier Synthesis---\n")
 build_syn_env_8x8.BuildSynEnv8x8()
 
 run_syn.RunSynthesis(syn_8x8_dir)
-'''
+
 run_syn.MergeSynResult(syn_8x8_dir, out_8x8_path)
 
 
