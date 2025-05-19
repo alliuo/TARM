@@ -35,7 +35,7 @@ TARM/
 
 ## Running an Example
 
-The folder [examples](examples/) provides ResNet-18 on CIFAR-10 as an example application. After modified the [config.yml](TARM/config/config.yml), running the example as follows. With the default configuration, the execution may take several hours.
+The folder [example](example/) provides ResNet-18 on CIFAR-10 as an example application. After modified the [config.yml](TARM/config/config.yml), running the example as follows. With the default configuration, the execution may take several hours.
 
 ```bash
 cd TARM
