@@ -1,0 +1,22 @@
+# ABC for logic synthesis
+abc: '/home/liuao/old_error_model/lut_level_gen/abc/abc'
+
+# TFApprox for the accuracy evaluation of AM-based CNN
+tfapprox_path: '/home/liuao/old_error_model/tf-approximate'
+
+# Name of the CNN application
+application: 'resnet18_cifar10'
+
+# Path to the CNN model
+application_path: '../example/resnet18_cifar10'
+
+# Path to the data distribution file
+dist_file: '../example/resnet18_cifar10/resnet18_cifar10_dist.txt'
+
+# ME_constraint is the bounds for Mean Error
+# Note that for parallel acceleration, the upper bound of ME needs to be 0, i.e., ME is always negative.
+ME_constraint: [-3.5, 0]
+
+# accuracy_threshold is the minimum acceptable accuracy for an AM-based CNN application.
+# Any AM that does not reach this threshold will not be judged as a Pareto-optimal solution.
+accuracy_threshold: 0.91

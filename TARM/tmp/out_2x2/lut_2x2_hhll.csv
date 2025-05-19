@@ -1,0 +1,2 @@
+mul_name,application,loc,lut,ME,gate_counts
+tmp_mul2_0,resnet18_cifar10,hhll,"[0, 0, 0, 0, 0, 1, 2, 3, 0, 2, 4, 6, 0, 3, 6, 9]",0.0,8

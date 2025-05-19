@@ -1,0 +1,12 @@
+python 3.7.16
+numpy 1.19.5
+pandas 1.3.5
+deap 1.4.1
+
+tesnsorflow 2.5.0
+cudatoolkit 11.2.0
+cudnn 8.1.0.77
+TFApprox
+
+synopsys dc 2014.09
+synopsys vcs 2016.06
