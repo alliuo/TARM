@@ -74,7 +74,7 @@ def ExtractDelay(timing_report):
     delay = None
     for line in timing_report_content.split('\n'):
         if "data arrival time" in line:
-            delay = float(line.split()[-1])
+            delay = -float(line.split()[-1])
             return delay
     return 0
         
