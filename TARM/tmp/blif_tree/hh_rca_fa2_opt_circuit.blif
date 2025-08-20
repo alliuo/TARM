@@ -1,0 +1,17 @@
+# Benchmark "top" written by ABC on Sun May 18 01:01:08 2025
+.model top
+.inputs cin a b
+.outputs carry sum
+.names a b new_n6
+00 1
+.names cin new_n6 carry
+10 1
+.names a b new_n8
+11 1
+.names carry new_n8 new_n9
+10 1
+.names cin new_n6 new_n10
+01 1
+.names new_n9 new_n10 sum
+00 1
+.end

@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : area
+Design : mul8_141
+Version: J-2014.09-SP3
+Date   : Mon May 19 00:11:40 2025
+****************************************
+
+Library(s) Used:
+
+    ih28hk_vhs_rvt_tt_0p90_25c_basic (File: /home/lao/IH28HK12T_V1p0/IH28HK_VHS_V1p0_basic/IH28HK_VHS_RVT_V1p0/synopsys/ih28hk_vhs_rvt_tt_0p90_25c_basic.db)
+
+Number of ports:                           32
+Number of nets:                           248
+Number of cells:                          213
+Number of combinational cells:            213
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         33
+Number of references:                      28
+
+Combinational area:                227.604004
+Buf/Inv area:                       15.444000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                   227.604004
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+mul8_141                           227.6040    100.0  227.6040     0.0000  0.0000  mul8_141
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                 227.6040     0.0000  0.0000
+
+1

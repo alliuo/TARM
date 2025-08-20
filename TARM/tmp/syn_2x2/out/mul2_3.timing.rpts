@@ -1,0 +1,42 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mul2_3
+Version: J-2014.09-SP3
+Date   : Sun May 18 13:24:29 2025
+****************************************
+
+Operating Conditions: TT   Library: ih28hk_vhs_rvt_tt_0p90_25c_basic
+Wire Load Model Mode: top
+
+  Startpoint: b[1] (input port clocked by vclk)
+  Endpoint: out[2] (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                0.00000    0.00000
+  clock network delay (ideal)           0.00000    0.00000
+  input external delay                  0.00000    0.00000 r
+  b[1] (in)                             0.00000    0.00000 r
+  U9/Z (VHSR_AND2_2)                    0.02074    0.02074 r
+  U10/Z (VHSR_AND2_2)                   0.02021    0.04095 r
+  out[2] (out)                          0.00000    0.04095 r
+  data arrival time                                0.04095
+
+  clock vclk (rise edge)                1.00000    1.00000
+  clock network delay (ideal)           0.00000    1.00000
+  output external delay                 0.00000    1.00000
+  data required time                               1.00000
+  -----------------------------------------------------------
+  data required time                               1.00000
+  data arrival time                               -0.04095
+  -----------------------------------------------------------
+  slack (MET)                                      0.95905
+
+
+1
