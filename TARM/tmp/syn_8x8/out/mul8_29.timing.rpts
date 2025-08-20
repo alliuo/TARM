@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mul8_29
+Version: J-2014.09-SP3
+Date   : Mon May 19 00:08:43 2025
+****************************************
+
+Operating Conditions: TT   Library: ih28hk_vhs_rvt_tt_0p90_25c_basic
+Wire Load Model Mode: top
+
+  Startpoint: b[0] (input port clocked by vclk)
+  Endpoint: product[14]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                0.00000    0.00000
+  clock network delay (ideal)           0.00000    0.00000
+  input external delay                  0.00000    0.00000 f
+  b[0] (in)                             0.00000    0.00000 f
+  U239/ZN (VHSR_IN_2)                   0.01334    0.01334 r
+  U353/ZN (VHSR_NOR2_1)                 0.01465    0.02799 f
+  U355/ZN (VHSR_IOA21_2)                0.03802    0.06601 f
+  U216/CO (VHSR_AD1_1)                  0.06853    0.13454 f
+  U358/ZN (VHSR_CLKNAND2_2)             0.01354    0.14808 r
+  U205/ZN (VHSR_INAND2_2)               0.01629    0.16436 f
+  U359/ZN (VHSR_CLKNAND2_2)             0.01755    0.18191 r
+  U362/ZN (VHSR_IN_2)                   0.01447    0.19638 f
+  U366/ZN (VHSR_IAO21_2)                0.01692    0.21330 r
+  U217/CO (VHSR_AD1_1)                  0.08237    0.29567 r
+  U214/CO (VHSR_AD1_1)                  0.03940    0.33507 r
+  U218/CO (VHSR_AD1_1)                  0.03934    0.37441 r
+  U219/CO (VHSR_AD1_1)                  0.03934    0.41376 r
+  U215/CO (VHSR_AD1_1)                  0.03934    0.45310 r
+  U220/CO (VHSR_AD1_1)                  0.03934    0.49244 r
+  U384/CO (VHSR_AD1_1)                  0.03934    0.53179 r
+  U385/CO (VHSR_AD1_1)                  0.03810    0.56989 r
+  U378/ZN (VHSR_CLKNAND2_2)             0.02209    0.59198 f
+  U387/Z (VHSR_XOR3_2)                  0.02864    0.62062 r
+  product[14] (out)                     0.00000    0.62062 r
+  data arrival time                                0.62062
+
+  clock vclk (rise edge)                1.00000    1.00000
+  clock network delay (ideal)           0.00000    1.00000
+  output external delay                 0.00000    1.00000
+  data required time                               1.00000
+  -----------------------------------------------------------
+  data required time                               1.00000
+  data arrival time                               -0.62062
+  -----------------------------------------------------------
+  slack (MET)                                      0.37938
+
+
+1

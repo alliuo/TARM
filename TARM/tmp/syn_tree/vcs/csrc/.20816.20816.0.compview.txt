@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1747547629.236559487, "rt":12.34, "ut":1.82, "st":0.53}}
+{"vcselab":{"timestamp_begin":1747547641.761234274, "rt":10.49, "ut":0.38, "st":0.14}}
+{"link":{"timestamp_begin":1747547652.393107701, "rt":0.33, "ut":0.17, "st":0.17}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1747547627.818018039}
+{"VCS_COMP_START_TIME": 1747547627.818018039}
+{"VCS_COMP_END_TIME": 1747547653.006566112}
+{"VCS_USER_OPTIONS": "-sverilog +v2k -timescale=1ns/1ps -debug_all +notimingcheck +nospecify +vcs+flush+all +define+DUMP_VPD +vpdfile+simv_top.vpd -o simv_top -l compile.log -cm_name simv_top -cm_dir ./simv_top.vdb /home/lao/IH28HK12T_V1p0/IH28HK_VHS_V1p0_basic/IH28HK_VHS_RVT_V1p0/verilog/IH28HK_VHS_RVT.v ../mapped/tree_11_synthesized.v ./tb/tree_11_tb.v"}
+{"vcs1": {"peak_mem": 487416}}
+{"stitch_vcselab": {"peak_mem": 322044}}

@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : area
+Design : tree_0
+Version: J-2014.09-SP3
+Date   : Sun May 18 13:55:40 2025
+****************************************
+
+Library(s) Used:
+
+    ih28hk_vhs_rvt_tt_0p90_25c_basic (File: /home/lao/IH28HK12T_V1p0/IH28HK_VHS_V1p0_basic/IH28HK_VHS_RVT_V1p0/synopsys/ih28hk_vhs_rvt_tt_0p90_25c_basic.db)
+
+Number of ports:                           24
+Number of nets:                            43
+Number of cells:                           25
+Number of combinational cells:             25
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          5
+Number of references:                      12
+
+Combinational area:                 25.740001
+Buf/Inv area:                        2.340000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                    25.740001
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+tree_0                              25.7400    100.0   25.7400     0.0000  0.0000  tree_0
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                  25.7400     0.0000  0.0000
+
+1

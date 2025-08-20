@@ -1,0 +1,51 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : tree_0
+Version: J-2014.09-SP3
+Date   : Sun May 18 13:55:40 2025
+****************************************
+
+Operating Conditions: TT   Library: ih28hk_vhs_rvt_tt_0p90_25c_basic
+Wire Load Model Mode: top
+
+  Startpoint: pp_ll[3] (input port clocked by vclk)
+  Endpoint: result[6] (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                0.00000    0.00000
+  clock network delay (ideal)           0.00000    0.00000
+  input external delay                  0.00000    0.00000 r
+  pp_ll[3] (in)                         0.00000    0.00000 r
+  U35/S (VHSR_AD1_1)                    0.06369    0.06369 r
+  U33/ZN (VHSR_IN_2)                    0.01233    0.07602 f
+  U34/ZN (VHSR_NOR2_1)                  0.02603    0.10205 r
+  U36/ZN (VHSR_NOR2_1)                  0.01803    0.12008 f
+  U37/ZN (VHSR_NOR2_1)                  0.02930    0.14938 r
+  U39/ZN (VHSR_NOR2_1)                  0.01899    0.16837 f
+  U42/ZN (VHSR_NOR2_1)                  0.02837    0.19673 r
+  U27/ZN (VHSR_INAND3_2)                0.02654    0.22328 r
+  U44/ZN (VHSR_CLKNAND2_2)              0.01561    0.23888 f
+  U45/ZN (VHSR_OAI21_2)                 0.00982    0.24870 r
+  U46/ZN (VHSR_IN_2)                    0.00581    0.25451 f
+  result[6] (out)                       0.00000    0.25451 f
+  data arrival time                                0.25451
+
+  clock vclk (rise edge)                1.00000    1.00000
+  clock network delay (ideal)           0.00000    1.00000
+  output external delay                 0.00000    1.00000
+  data required time                               1.00000
+  -----------------------------------------------------------
+  data required time                               1.00000
+  data arrival time                               -0.25451
+  -----------------------------------------------------------
+  slack (MET)                                      0.74549
+
+
+1

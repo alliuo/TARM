@@ -1,0 +1,51 @@
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : mul8_29
+Version: J-2014.09-SP3
+Date   : Mon May 19 00:08:43 2025
+****************************************
+
+
+Library(s) Used:
+
+    ih28hk_vhs_rvt_tt_0p90_25c_basic (File: /home/lao/IH28HK12T_V1p0/IH28HK_VHS_V1p0_basic/IH28HK_VHS_RVT_V1p0/synopsys/ih28hk_vhs_rvt_tt_0p90_25c_basic.db)
+
+
+Operating Conditions: TT   Library: ih28hk_vhs_rvt_tt_0p90_25c_basic
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 0.9  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  84.2070 uW   (54%)
+  Net Switching Power  =  72.2801 uW   (46%)
+                         ---------
+Total Dynamic Power    = 156.4871 uW  (100%)
+
+Cell Leakage Power     = 639.5531 nW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  8.4207e-02        7.2280e-02          639.5531            0.1571  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total          8.4207e-02 mW     7.2280e-02 mW       639.5531 nW         0.1571 mW
+1

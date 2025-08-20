@@ -1,0 +1,13 @@
+# Benchmark "top" written by ABC on Sat May 17 22:54:52 2025
+.model top
+.inputs a1 a0 b1 b0
+.outputs y3 y2 y1 y0
+.names a1 b1 y2
+11 1
+.names a1 b0 y1
+11 1
+.names a0 b0 y0
+11 1
+.names y3
+ 0
+.end

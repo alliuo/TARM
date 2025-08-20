@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : tree_4
+Version: J-2014.09-SP3
+Date   : Sun May 18 13:54:45 2025
+****************************************
+
+Operating Conditions: TT   Library: ih28hk_vhs_rvt_tt_0p90_25c_basic
+Wire Load Model Mode: top
+
+  Startpoint: pp_ll[3] (input port clocked by vclk)
+  Endpoint: result[6] (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                0.00000    0.00000
+  clock network delay (ideal)           0.00000    0.00000
+  input external delay                  0.00000    0.00000 r
+  pp_ll[3] (in)                         0.00000    0.00000 r
+  U34/S (VHSR_AD1_1)                    0.06115    0.06115 f
+  U32/ZN (VHSR_CLKNAND2_2)              0.01810    0.07925 r
+  U33/ZN (VHSR_IN_2)                    0.01374    0.09299 f
+  U35/ZN (VHSR_NOR2_1)                  0.01573    0.10872 r
+  U39/ZN (VHSR_OAI21_2)                 0.02086    0.12958 f
+  U30/CO (VHSR_AD1_1)                   0.06688    0.19646 f
+  U41/ZN (VHSR_CLKNAND2_2)              0.01353    0.20999 r
+  U42/ZN (VHSR_OAI21_2)                 0.01431    0.22430 f
+  U43/ZN (VHSR_IN_2)                    0.00595    0.23025 r
+  result[6] (out)                       0.00000    0.23025 r
+  data arrival time                                0.23025
+
+  clock vclk (rise edge)                1.00000    1.00000
+  clock network delay (ideal)           0.00000    1.00000
+  output external delay                 0.00000    1.00000
+  data required time                               1.00000
+  -----------------------------------------------------------
+  data required time                               1.00000
+  data arrival time                               -0.23025
+  -----------------------------------------------------------
+  slack (MET)                                      0.76975
+
+
+1

@@ -1,0 +1,52 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : tree_6
+Version: J-2014.09-SP3
+Date   : Sun May 18 13:54:53 2025
+****************************************
+
+Operating Conditions: TT   Library: ih28hk_vhs_rvt_tt_0p90_25c_basic
+Wire Load Model Mode: top
+
+  Startpoint: pp_hl[1] (input port clocked by vclk)
+  Endpoint: result[6] (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                0.00000    0.00000
+  clock network delay (ideal)           0.00000    0.00000
+  input external delay                  0.00000    0.00000 f
+  pp_hl[1] (in)                         0.00000    0.00000 f
+  U37/Z (VHSR_OR2_2)                    0.01860    0.01860 f
+  U38/ZN (VHSR_AOI22_2)                 0.02330    0.04190 r
+  U39/ZN (VHSR_OAI31_2)                 0.01965    0.06155 f
+  U28/ZN (VHSR_NOR2_1)                  0.02615    0.08770 r
+  U40/ZN (VHSR_IN_2)                    0.01494    0.10264 f
+  U41/ZN (VHSR_CLKNAND2_2)              0.01137    0.11402 r
+  U33/ZN (VHSR_INOR2_1)                 0.02807    0.14209 r
+  U32/ZN (VHSR_INAND2_1)                0.03034    0.17243 r
+  U34/CO (VHSR_AD1_1)                   0.06621    0.23865 r
+  U46/ZN (VHSR_CLKNAND2_2)              0.01523    0.25388 f
+  U47/ZN (VHSR_OAI21_2)                 0.00910    0.26298 r
+  U30/ZN (VHSR_CLKN_1)                  0.00570    0.26868 f
+  result[6] (out)                       0.00000    0.26868 f
+  data arrival time                                0.26868
+
+  clock vclk (rise edge)                1.00000    1.00000
+  clock network delay (ideal)           0.00000    1.00000
+  output external delay                 0.00000    1.00000
+  data required time                               1.00000
+  -----------------------------------------------------------
+  data required time                               1.00000
+  data arrival time                               -0.26868
+  -----------------------------------------------------------
+  slack (MET)                                      0.73132
+
+
+1

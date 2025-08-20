@@ -1,0 +1,146 @@
+0 
+44
++define+DUMP_VPD
++itf+/home/opt/Synopsys/vcs_2022.06/T-2022.06/linux/lib/vcsdp.tab
++memcbk
++nospecify
++notimingcheck
++v2k
++vcs+flush+all
++vcsd
++vpi
+-Mamsrun=
+-Masflags=--32
+-Mcc=gcc
+-Mcfl= -pipe -m32 -O -I/home/opt/Synopsys/vcs_2022.06/T-2022.06/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -m32 -m32 -rdynamic
+-Mobjects= /home/opt/Synopsys/vcs_2022.06/T-2022.06/linux/lib/libvirsim.so /home/opt/Synopsys/vcs_2022.06/T-2022.06/linux/lib/liberrorinf.so /home/opt/Synopsys/vcs_2022.06/T-2022.06/linux/lib/libsnpsmalloc.so /home/opt/Synopsys/vcs_2022.06/T-2022.06/linux/lib/libvfs.so
+-Mout=simv_top
+-Msaverestoreobj=/home/opt/Synopsys/vcs_2022.06/T-2022.06/linux/lib/vcs_save_restore_new.o
+-Msyslibs=/home/opt/Synopsys/vcs_2022.06/T-2022.06/linux/lib/ctype-stubs_32.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -m32 -I/home/opt/Synopsys/vcs_2022.06/T-2022.06/include
+-Mxllcflags=
+-cm_dir
+-cm_name
+-debug_access+all+bc
+-debug_region+cell
+-gen_obj
+-l
+-o simv_top
+-picarchive
+-sverilog
+-timescale=1ns/1ps
+/home/opt/Synopsys/vcs_2022.06/T-2022.06/linux/bin/vcs1
+compile.log
+simv_top
+simv_top
+./simv_top.vdb
+/home/lao/IH28HK12T_V1p0/IH28HK_VHS_V1p0_basic/IH28HK_VHS_RVT_V1p0/verilog/IH28HK_VHS_RVT.v
+../mapped/mul2_7_synthesized.v
+./tb/mul2_7_tb.v
+85
+redhawk_LIC_HOME=/home/opt/ansys/RedHawk_Linux64e7_V2021R2.3/licensingclient
+redhawk_HOME=/home/opt/ansys/RedHawk_Linux64e7_V2021R2.3
+XDG_SESSION_ID=8940
+XDG_RUNTIME_DIR=/run/user/1004
+XDG_DATA_DIRS=/home/lao/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+XA_HOME=/home/opt/Synopsys/xa_2022.06/T-2022.06
+Virtuoso_HOME=/home/opt/Cadence/IC618
+VMR_MODE_FLAG=32
+VERDI_HOME=/home/opt/Synopsys/verdi_2022.06/T-2022.06
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_LOG_FILE=compile.log
+VCS_HOME=/home/opt/Synopsys/vcs_2022.06/T-2022.06
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux
+VCS_AMD_PURE32=1
+UNAME=/bin/uname
+TOOL_HOME=/home/opt/Synopsys/vcs_2022.06/T-2022.06/linux
+TK_LIBRARY=/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15/pkgs/icv_comp/8.6/lib/tk
+TCL_LIBRARY=/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15/pkgs/icv_comp/8.6/lib/tcl
+Synopsys_Dir=/home/opt/Synopsys
+SYNOPSYS_LC_ROOT=/home/opt/Synopsys/lc_2022.03/T-2022.03
+STARRC_HOME=/home/opt/Synopsys/starrc_2022.03/T-2022.03
+SSH_TTY=/dev/pts/57
+SSH_CONNECTION=10.180.126.126 59724 202.120.39.27 16822
+SSH_CLIENT=10.180.126.126 59724 16822
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SPYGLASS_HOME=/home/opt/Synopsys/spyglass_2022.06/T-2022.06-1/SPYGLASS_HOME
+SPYGLASS_DC_PATH=/home/opt/Synopsys/dc_2014.09
+SNPS_VCS_CLANG_PATH=/home/opt/Synopsys/vcs_2022.06/T-2022.06/linux/clang
+SNPS_INTERNAL_VCS_LINUX_OS=linux
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+SCL_HOME=/home/opt/Synopsys/scl_2023.03/2023.03
+QT_PLUGIN_PATH=/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15/pkgs/icv_qt5_comp/plugins
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PYTHONPATH=/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15/pkgs/icv/pvt/py/lut_manipulation:/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15/pkgs/icv/pvt/py/calibreutils:/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15/pkgs/icv/pvt/py/mtfu_search:/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15/pkgs/icv/pvt/py/mlmodelflow:/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15/pkgs/icv/pvt/py/fragmate:/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15/pkgs/icv/pvt/py/enc_dec:/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15/pkgs/icv/pvt/py/sonr:/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15/pkgs/icv/pvt/py/perc:/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15/pkgs/icv/pvt/py/nnam:/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15/pkgs/icv/pvt/py/mtfu:/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15/pkgs/icv/pvt/py/mldb:/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15/pkgs/icv/pvt/py/wsc:/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15/pkgs/icv/pvt/py/dfm
+PT_HOME=/home/opt/Synopsys/prime_2022.03/T-2022.03
+OVA_UUM=0
+OA_PLUGIN_PATH=/home/opt/Cadence/IC618/oa_v22.60.091/data/plugins
+OA_HOME=/home/opt/Cadence/IC618/oa_v22.60.091
+NOVAS_HOME=/home/opt/Synopsys/verdi_2022.06/T-2022.06
+NOVAS=/home/opt/Synopsys/verdi_2022.06/T-2022.06/share/PLI/VCS/linux64
+MUL=mul2_7
+MGLS_LICENSE_FILE=/home/opt/mentor/license/mentor.dat
+MGC_TMPDIR=/var/tmp
+MGC_LANG=En_na
+MGC_HOME=/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15
+MGC_FDI_OA_VERSION=22.50
+MFLAGS=-w
+MENTOR_DIR=/home/opt/mentor
+MAKEOVERRIDES=${-*-command-variables-*-}
+MAKELEVEL=2
+MAKEFLAGS=w -- MUL=mul2_7
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_HOME=/home/opt/Synopsys/lc_2022.03/T-2022.03
+LC_ALL=C
+ITK_LIBRARY=/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15/pkgs/icv_comp/8.6/lib/itk
+ITCL_LIBRARY=/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15/pkgs/icv_comp/8.6/lib/itcl
+INNOVUS_HOME=/home/opt/Cadence/INNOVUS211
+ICC2_HOME=/home/opt/Synopsys/icc2_2022.03/T-2022.03
+HSPICE_HOME=/home/opt/Synopsys/hspice_2021.09/S-2021.09
+HISTCONTROL=ignoredups
+Formality_HOME=/home/opt/Synopsys/fm_2022.03/T-2022.03
+DVE_HOME=/home/opt/Synopsys/vcs_2022.06/T-2022.06
+DEFAULTFONTPATH=-fp /usr/share/X11/fonts/misc -co /usr/share/X11/rgb
+DC_HOME=/home/opt/Synopsys/dc_2014.09
+Cadence_Dir=/home/opt/Cadence
+CDS_Netlisting_Mode=Analog
+CDS_LOAD_ENV=CSF
+CDS_LIC_FILE=/home/opt/Cadence/license/cadence.dat
+CDS_AUTO_64BIT=ALL
+CALIBRE_SKIP_DYNAMIC_LIBRARY_CHECK=1
+CALIBRE_READDB_LD_LIBRARY_PATH=/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15/pkgs/icv_python/asp/lib
+CALIBRE_HOME=/home/opt/mentor/calibre2021/aoi_cal_2021.2_28.15
+CALIBRE_ENABLE_SKILL_PEXBA_MODE=1
+CALIBRE_ATOMIC_LVHEAP=0
+Ansys_Dir=/home/opt/ansys
+APACHEROOT=/home/opt/ansys/RedHawk_Linux64e7_V2021R2.3
+APACHEDA_LICENSE_FILE=/home/opt/ansys/RedHawk_Linux64e7_V2021R2.3/licensingclient/license.txt
+0
+0
+4
+1747501564 ./tb/mul2_7_tb.v
+1747545156 ../mapped/mul2_7_synthesized.v
+1592989899 /home/lao/IH28HK12T_V1p0/IH28HK_VHS_V1p0_basic/IH28HK_VHS_RVT_V1p0/verilog/IH28HK_VHS_RVT.v
+1654052772 /home/opt/Synopsys/vcs_2022.06/T-2022.06/linux/lib/vcsdp.tab
+4
+1654057313 /home/opt/Synopsys/vcs_2022.06/T-2022.06/linux/lib/libvirsim.so
+1654056069 /home/opt/Synopsys/vcs_2022.06/T-2022.06/linux/lib/liberrorinf.so
+1654055841 /home/opt/Synopsys/vcs_2022.06/T-2022.06/linux/lib/libsnpsmalloc.so
+1654056923 /home/opt/Synopsys/vcs_2022.06/T-2022.06/linux/lib/libvfs.so
+1747545839 simv_top.daidir
+-1 partitionlib

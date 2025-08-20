@@ -1,0 +1,14 @@
+Command: /home/lao/lut_gen_public/TARM/tmp/syn_tree/vcs/./simv_top -cm line+cond+fsm+branch+tgl -cm_name simv_top -cm_dir ./simv_top.vdb +vpdfile+simv_top.vpd -l simv_top.log
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06; Runtime version T-2022.06;  May 18 13:54 2025
+Message: From $vcdpluson at time 0 in file ./tb/tree_11_tb.v line 16: [VCD+-SVFN]: 
+Setting VPD File by "+vpdfile+" switch to simv_top.vpd.
+
+VCD+ Writer T-2022.06 Copyright (c) 1991-2022 by Synopsys Inc.
+$finish called from file "./tb/tree_11_tb.v", line 26.
+$finish at simulation time           1000000000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1000000000 ps
+CPU Time:      2.280 seconds;       Data structure size:   0.1Mb
+Sun May 18 13:54:25 2025
