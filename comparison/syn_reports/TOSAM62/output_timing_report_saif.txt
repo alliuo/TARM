@@ -1,0 +1,56 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : unsigned_multiplier
+Version: J-2014.09-SP3
+Date   : Fri Sep  1 23:13:32 2023
+****************************************
+
+Operating Conditions: TT   Library: ih28hk_vhs_rvt_tt_0p90_25c_basic
+Wire Load Model Mode: top
+
+  Startpoint: b[6] (input port)
+  Endpoint: Out[8] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                  0.00000    0.00000 f
+  b[6] (in)                             0.00000    0.00000 f
+  U202/ZN (VHSR_NOR2_1)                 0.04355    0.04355 r
+  U203/ZN (VHSR_IN_2)                   0.02415    0.06769 f
+  U204/ZN (VHSR_NOR3_2)                 0.04805    0.11574 r
+  U217/ZN (VHSR_AOI211_2)               0.04216    0.15790 f
+  U218/ZN (VHSR_OAI21_2)                0.03313    0.19103 r
+  U224/ZN (VHSR_IN_2)                   0.02453    0.21556 f
+  U260/ZN (VHSR_AOI22_2)                0.02297    0.23852 r
+  U261/ZN (VHSR_IN_2)                   0.01074    0.24926 f
+  U262/ZN (VHSR_AOI32_2)                0.01777    0.26704 r
+  U263/ZN (VHSR_OAI22_2)                0.02661    0.29365 f
+  U264/ZN (VHSR_OAI32_2)                0.02288    0.31653 r
+  U265/ZN (VHSR_IN_2)                   0.02020    0.33672 f
+  U266/ZN (VHSR_CLKNAND2_2)             0.02813    0.36485 r
+  U268/ZN (VHSR_CLKNAND2_2)             0.02118    0.38603 f
+  U281/S (VHSR_AD1_1)                   0.04028    0.42631 r
+  U292/CO (VHSR_AD1_1)                  0.08549    0.51180 r
+  U301/CO (VHSR_AD1_1)                  0.03934    0.55114 r
+  U308/CO (VHSR_AD1_1)                  0.03934    0.59048 r
+  U307/CO (VHSR_AD1_1)                  0.03810    0.62859 r
+  U302/ZN (VHSR_CLKNAND2_2)             0.02364    0.65223 f
+  U304/ZN (VHSR_OAI21_2)                0.02056    0.67278 r
+  U367/ZN (VHSR_IN_2)                   0.01189    0.68468 f
+  U368/ZN (VHSR_AOI211_2)               0.02175    0.70643 r
+  U370/ZN (VHSR_OAI32_2)                0.03040    0.73682 f
+  U193/ZN (VHSR_IAO22_2)                0.02405    0.76087 f
+  U372/ZN (VHSR_AOI221_2)               0.02163    0.78250 r
+  Out[8] (out)                          0.00000    0.78250 r
+  data arrival time                                0.78250
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

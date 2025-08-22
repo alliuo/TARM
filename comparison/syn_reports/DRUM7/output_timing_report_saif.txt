@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: J-2014.09-SP3
+Date   : Thu Aug 31 19:46:25 2023
+****************************************
+
+Operating Conditions: TT   Library: ih28hk_vhs_rvt_tt_0p90_25c_basic
+Wire Load Model Mode: top
+
+  Startpoint: b[7] (input port)
+  Endpoint: result[13] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                  0.00000    0.00000 r
+  b[7] (in)                             0.00000    0.00000 r
+  U150/ZN (VHSR_IN_1)                   0.02333    0.02333 f
+  U175/ZN (VHSR_AOI22_2)                0.04002    0.06334 r
+  U176/ZN (VHSR_IN_1)                   0.03305    0.09639 f
+  U177/ZN (VHSR_CLKNAND2_1)             0.02414    0.12053 r
+  U178/ZN (VHSR_IN_1)                   0.01860    0.13913 f
+  U191/ZN (VHSR_AOI21_2)                0.02140    0.16053 r
+  U207/S (VHSR_AD1_1)                   0.07648    0.23701 r
+  U219/S (VHSR_AD1_1)                   0.06755    0.30457 r
+  U230/S (VHSR_AD1_1)                   0.06757    0.37213 r
+  U253/S (VHSR_AD1_1)                   0.06512    0.43725 r
+  U278/CO (VHSR_AD1_1)                  0.08357    0.52082 r
+  U254/ZN (VHSR_CLKNAND2_1)             0.01641    0.53724 f
+  U255/ZN (VHSR_IN_1)                   0.01785    0.55509 r
+  U273/CO (VHSR_AD1_1)                  0.08292    0.63801 r
+  U270/CO (VHSR_AD1_1)                  0.03934    0.67735 r
+  U267/CO (VHSR_AD1_1)                  0.03934    0.71670 r
+  U263/CO (VHSR_AD1_1)                  0.03604    0.75274 r
+  U260/ZN (VHSR_XNOR3_2)                0.06386    0.81660 r
+  U266/ZN (VHSR_OAI222_2)               0.02531    0.84190 f
+  result[13] (out)                      0.00000    0.84190 f
+  data arrival time                                0.84190
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
