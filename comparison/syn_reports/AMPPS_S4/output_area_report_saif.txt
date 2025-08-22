@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : unsigned_multiplier
+Version: J-2014.09-SP3
+Date   : Sun Sep  3 14:42:27 2023
+****************************************
+
+Library(s) Used:
+
+    ih28hk_vhs_rvt_tt_0p90_25c_basic (File: /home/wyong/library/IH28HK_VHS_V1p0/synopsys/ih28hk_vhs_rvt_tt_0p90_25c_basic.db)
+
+Number of ports:                           32
+Number of nets:                           214
+Number of cells:                          172
+Number of combinational cells:            172
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         24
+Number of references:                      25
+
+Combinational area:                217.464006
+Buf/Inv area:                       11.232000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                   217.464006
+Total area:                 undefined
+1
