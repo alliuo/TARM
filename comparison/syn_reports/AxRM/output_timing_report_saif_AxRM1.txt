@@ -1,0 +1,48 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : AxRM1
+Version: J-2014.09-SP3
+Date   : Sun Aug 20 21:42:05 2023
+****************************************
+
+Operating Conditions: TT   Library: ih28hk_vhs_rvt_tt_0p90_25c_basic
+Wire Load Model Mode: top
+
+  Startpoint: d[0] (input port)
+  Endpoint: s[14] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                  0.00000    0.00000 r
+  d[0] (in)                             0.00000    0.00000 r
+  U157/ZN (VHSR_IN_2)                   0.00689    0.00689 f
+  U267/ZN (VHSR_NOR2_1)                 0.02267    0.02955 r
+  U301/CO (VHSR_AD1_1)                  0.08598    0.11553 r
+  U300/CO (VHSR_AD1_1)                  0.03668    0.15222 r
+  U270/Z (VHSR_AND2_2)                  0.03206    0.18427 r
+  U280/ZN (VHSR_XNOR3_2)                0.06203    0.24631 r
+  U288/S (VHSR_AD1_1)                   0.07212    0.31842 r
+  U286/Z (VHSR_AND2_2)                  0.03263    0.35105 r
+  U298/CO (VHSR_AD1_1)                  0.08253    0.43358 r
+  U297/CO (VHSR_AD1_1)                  0.03934    0.47292 r
+  U304/CO (VHSR_AD1_1)                  0.03934    0.51227 r
+  U154/CO (VHSR_AD1_1)                  0.03934    0.55161 r
+  U303/CO (VHSR_AD1_1)                  0.03934    0.59095 r
+  U302/CO (VHSR_AD1_1)                  0.03934    0.63030 r
+  U155/CO (VHSR_AD1_1)                  0.04106    0.67136 r
+  U289/Z (VHSR_AND2_2)                  0.03184    0.70321 r
+  U295/ZN (VHSR_OAI21_2)                0.01423    0.71743 f
+  U296/ZN (VHSR_IN_2)                   0.00585    0.72328 r
+  s[14] (out)                           0.00000    0.72328 r
+  data arrival time                                0.72328
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
