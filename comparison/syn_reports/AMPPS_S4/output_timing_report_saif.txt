@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : unsigned_multiplier
+Version: J-2014.09-SP3
+Date   : Sun Sep  3 14:42:27 2023
+****************************************
+
+Operating Conditions: TT   Library: ih28hk_vhs_rvt_tt_0p90_25c_basic
+Wire Load Model Mode: top
+
+  Startpoint: b[7] (input port)
+  Endpoint: Out[11] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                  0.00000    0.00000 f
+  b[7] (in)                             0.00000    0.00000 f
+  U520/ZN (VHSR_NOR2_1)                 0.05831    0.05831 r
+  U556/ZN (VHSR_AOI222_2)               0.05337    0.11167 f
+  U570/ZN (VHSR_NOR2_1)                 0.03496    0.14664 r
+  U580/S (VHSR_AD1_1)                   0.08036    0.22700 r
+  U589/CO (VHSR_AD1_1)                  0.06883    0.29584 r
+  U616/S (VHSR_AD1_1)                   0.07414    0.36998 r
+  U609/S (VHSR_AD1_1)                   0.07797    0.44795 r
+  U610/ZN (VHSR_AOI21_2)                0.01863    0.46658 f
+  U619/ZN (VHSR_AOI21_2)                0.01725    0.48383 r
+  U668/CO (VHSR_AD1_1)                  0.08327    0.56710 r
+  U672/CO (VHSR_AD1_1)                  0.04143    0.60853 r
+  U631/ZN (VHSR_AOI21_2)                0.02584    0.63437 f
+  U633/ZN (VHSR_OAI31_2)                0.03393    0.66831 r
+  U681/ZN (VHSR_IN_2)                   0.01793    0.68624 f
+  U685/ZN (VHSR_AOI22_2)                0.01659    0.70283 r
+  U686/ZN (VHSR_OAI211_2)               0.01544    0.71827 f
+  Out[11] (out)                         0.00000    0.71827 f
+  data arrival time                                0.71827
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
