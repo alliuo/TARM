@@ -241,7 +241,7 @@ def NSGATree(abc_path, loc, dist, mul_lut_list, sub_ME_constraint, pop_size, nge
             elif (rand_num_fa == 2):
                 fa_lut_list = [acc_fa[:-1] + [random.randint(0,3)] for j in range(4)]
                 
-            rca_lut_list = rca_lut_list = [acc_fa]*3 + [acc_ha]
+            rca_lut_list = [acc_fa]*3 + [acc_ha]
             if (rand_num_rca == 0):
                 rca_lut_list[0] = [0, 1, 1] + [random.randint(0,2)] + [1, 2, 2] + [random.randint(0,3)]
                 rca_lut_list[1] = acc_fa[:-1] + [random.randint(0,3)]

@@ -6,6 +6,8 @@ deap 1.4.1
 tesnsorflow 2.5.0
 cudatoolkit 11.2.0
 cudnn 8.1.0.77
+
+ABC 1.01
 TFApprox
 
 synopsys dc 2014.09

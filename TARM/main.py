@@ -18,6 +18,7 @@ out_tree_path = os.path.abspath('./out/lut_tree.csv')
 out_8x8_path = os.path.abspath('./out/mul_8x8.csv')
 eval_8x8_dir = os.path.abspath('./tmp/eval_8x8')
 
+
 banner = """
 /-----------------------------------------------------\\
 |                    TARM Framework                   |
@@ -42,10 +43,8 @@ run_opt_2x2_tree.ParallelRun(max_workers=20)
 print("---Building Block Synthesis---\n")
 build_syn_env_2x2_tree.BuildSynEnv2x2()
 build_syn_env_2x2_tree.BuildSynEnvTree()
-
 run_syn.RunSynthesis(syn_2x2_dir)
 run_syn.RunSynthesis(syn_tree_dir)
-
 run_syn.MergeSynResult(syn_2x2_dir, out_2x2_path)
 run_syn.MergeSynResult(syn_tree_dir, out_tree_path)
 
@@ -56,17 +55,13 @@ optimize_8x8.Optimize8x8(pop_size=500, ngen=3000, cxpb=0.8, mutpb=0.2)
 
 print("---Multiplier Synthesis---\n")
 build_syn_env_8x8.BuildSynEnv8x8()
-
 run_syn.RunSynthesis(syn_8x8_dir)
-
 run_syn.MergeSynResult(syn_8x8_dir, out_8x8_path)
 
 
 print("---Multiplier Evaluation---\n")
-#run_eval.RunEvaluation(eval_8x8_dir, out_8x8_path, gpu_index=0)
+run_eval.RunEvaluation(eval_8x8_dir, out_8x8_path, gpu_index=0)
 
 print("---Extract Pareto-Optimal Multipliers ---\n")
-#target_hardware_cost = ['Power', 'Area'] # 1 or 2 metrics
-target_hardware_cost = ['PDP'] # 1 or 2 metrics
+target_hardware_cost = ['Power', 'Area'] # 1 or 2 metrics
 final_pareto.FinalPareto(target_hardware_cost, './out')
-

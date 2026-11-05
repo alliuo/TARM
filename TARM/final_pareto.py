@@ -1,4 +1,5 @@
 import os
+import numpy as np
 import pandas as pd
 from config import Config
 
@@ -7,32 +8,18 @@ def GetPareto(df, target_hardware_cost):
     """
     Use traversal method to find the pareto front
     """
-    df_sorted = df.sort_values(by='accuracy', ascending=False)
-    pareto_frontier = []
-    for index, row in df_sorted.iterrows():
-        if not pareto_frontier:
-            pareto_frontier.append(row.to_dict())
-        else:
-            if len(target_hardware_cost) == 2:
-                min_metric0 = True
-                min_metric1 = True
-                for pareto_solution in pareto_frontier:
-                    if row[target_hardware_cost[0]] > pareto_solution[target_hardware_cost[0]]:
-                        min_metric0 = False
-                    if row[target_hardware_cost[1]] > pareto_solution[target_hardware_cost[1]]:
-                        min_metric1 = False
-                if min_metric0 or min_metric1:
-                    pareto_frontier.append(row.to_dict())
-            else:
-                min_metric = True
-                for pareto_solution in pareto_frontier:
-                    if row[target_hardware_cost[0]] > pareto_solution[target_hardware_cost[0]]:
-                        min_metric = False
-                if min_metric:
-                    pareto_frontier.append(row.to_dict())
-
-    df_pareto = pd.DataFrame(pareto_frontier)
-    return df_pareto
+    data = df.copy()
+    data['accuracy_inv'] = -data['accuracy']
+    cols = ['accuracy_inv'] + target_hardware_cost
+    vals = data[cols].values
+    n_points = vals.shape[0]
+    is_pareto = np.ones(n_points, dtype=bool)
+    for i in range(n_points):
+        if is_pareto[i]:
+            c = vals[i]
+            is_dominated = np.all(c <= vals, axis=1) & np.any(c < vals, axis=1)
+            is_pareto[is_dominated] = False
+    return df[is_pareto]
 
 
 def FinalPareto(target_hardware_cost, out_path):

@@ -1,13 +1,8 @@
-# python cache
-__pycache__
+# Python cache
+__pycache__/
 
-# template files
-TARM/abc.history
-#TARM/tmp/blif_2x2
-#TARM/tmp/blif_tree
-
-#TARM/tmp/syn_2x2
-#TARM/tmp/syn_tree
-#TARM/tmp/syn_8x8
-
-#TARM/tmp/eval_8x8
+# Generated results and intermediate files
+/comparison/
+/TARM/out/
+/TARM/tmp/
+abc.history

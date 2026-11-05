@@ -18,14 +18,14 @@ def RunEvaluation(base_dir, out_file, gpu_index=0):
     df_8x8 = pd.read_csv(out_file)
     if 'accuracy' in df_8x8.columns:
         print('Evaluation Stop: The output file already contains the accuracy metrics.')
+        return
 
-    os.chdir(config_inst.application_path)
     for lut in lut_list:
         application_script = config_inst.application + '.py'
         lut_path = os.path.join(lut_dir, lut)
         cmd = ['python', application_script, config_inst.tfapprox_path, lut_path, str(gpu_index)]
         print(f"[Evaluation] Running: {' '.join(cmd)}")
-        result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+        result = subprocess.run(cmd, capture_output=True, text=True, check=True, cwd=config_inst.application_path)
         accuracy = float(result.stdout.strip())
 
         mul_name = lut[:-4] # remove .bin
@@ -33,7 +33,6 @@ def RunEvaluation(base_dir, out_file, gpu_index=0):
         row_len = df_acc.shape[0]
         df_acc.loc[row_len] = new_row
         print(f"Multiplier: {mul_name}, Accuracy: {accuracy}")
-    os.chdir(base_dir)
 
     merged_df = pd.merge(df_8x8, df_acc, on='mul_name')
     merged_df.to_csv(out_file, index=False)

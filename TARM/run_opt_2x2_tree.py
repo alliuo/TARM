@@ -71,6 +71,8 @@ def ParallelRun(max_workers=20):
 
     succeeded = sum(1 for _, s in results if s.startswith("OK"))
     print(f"\nDone: {succeeded}/{total} succeeded, {total - succeeded} failed.")
+    if succeeded != total:
+        raise RuntimeError("Building block optimization failed; see ./tmp/opt_log_2x2 and ./tmp/opt_log_tree.")
 
 
 if __name__ == "__main__":

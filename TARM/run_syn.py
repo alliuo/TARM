@@ -75,8 +75,9 @@ def ExtractDelay(timing_report):
     for line in timing_report_content.split('\n'):
         if "data arrival time" in line:
             delay = -float(line.split()[-1])
-            return delay
-    return 0
+    if delay is None or not 0 <= delay < float('inf'):
+        raise ValueError('Missing or invalid data arrival time: ' + timing_report)
+    return delay
         
 
 def ExtractSynResult(base_dir):
@@ -138,18 +139,14 @@ def RunSynthesis(base_dir):
         if os.path.exists(run_dir):
             shutil.rmtree(run_dir)
         os.makedirs(run_dir)
-        os.chdir(run_dir) # cd /run
         cmd = ['dc_shell', '-f', os.path.join('..', 'dc_step1', f'{unit}_step1.tcl')]
         print(f"[DC STEP1] Running: {' '.join(cmd)}")
-        subprocess.run(cmd, check=True)
-        os.chdir(base_dir) # cd ..
+        subprocess.run(cmd, check=True, cwd=run_dir)
     
     # VCS simulation (generate the back-annotated switching activity file)
     vcs_dir = os.path.join(base_dir, 'vcs')
-    os.chdir(vcs_dir)  # cd /vcs
     print(f"[VCS] Running simulation in {vcs_dir}")
-    subprocess.run(['make', 'regress'], check=True)
-    os.chdir(base_dir) # cd ..
+    subprocess.run(['make', 'regress'], check=True, cwd=vcs_dir)
     
     # DC step 2 (report)
     for unit in unit_name_list:
@@ -157,11 +154,9 @@ def RunSynthesis(base_dir):
         if os.path.exists(run_dir):
             shutil.rmtree(run_dir)
         os.makedirs(run_dir)
-        os.chdir(run_dir)  # cd /run
         cmd = ['dc_shell', '-f', os.path.join('..', 'dc_step2', f'{unit}_step2.tcl')]
         print(f"[DC STEP2] Running: {' '.join(cmd)}")
-        subprocess.run(cmd, check=True)
-        os.chdir(base_dir) # cd ..
+        subprocess.run(cmd, check=True, cwd=run_dir)
     
     # Extract synthesis result
     print(f"[EXTRACT] Extract synthesis results, save in {base_dir}")

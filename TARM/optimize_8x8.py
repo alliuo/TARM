@@ -214,7 +214,7 @@ def Optimize8x8(pop_size=500, ngen=3000, cxpb=0.8, mutpb=0.2):
     unique_pareto_front = [list(sublist) for sublist in unique_pareto_front]
     
     # Save results
-    df_8x8 = pd.DataFrame(columns = (['mul_name', 'structure', 'application', 'ME', 'area', 'power', 'gate_counts']))
+    df_8x8 = pd.DataFrame(columns = (['mul_name', 'structure', 'application', 'ME', 'estimated_area', 'estimated_power', 'gate_counts']))
     mul_8x8_idx = 0
     for index_list in unique_pareto_front:
         ME = GetME(df_2x2_list, index_list, mul_dist_list, tree_error_matrices_list)
@@ -235,7 +235,7 @@ def Optimize8x8(pop_size=500, ngen=3000, cxpb=0.8, mutpb=0.2):
             gate_counts     += df_tree_list[i].loc[index_list[i+16],'gate_counts']
         # Name the multiplier, the same structure has the same name
         same_structure_mul = df_8x8.loc[df_8x8.loc[:,'structure']==structure, 'mul_name']
-        if structure == ','.join(['mul2_acc']*16) + ','.join(['tree_acc']*4):
+        if structure == ','.join(['mul2_acc']*16 + ['tree_acc']*4):
             mul_8x8_name = 'mul8_acc'
         elif (same_structure_mul.empty):
             mul_8x8_name = 'mul8_' + str(mul_8x8_idx)
