@@ -1,8 +1,8 @@
 # ABC for logic synthesis
-abc: '/home/liuao/old_error_model/lut_level_gen/abc/abc'
+abc: '/path/to/abc'
 
 # TFApprox for the accuracy evaluation of AM-based CNN
-tfapprox_path: '/home/liuao/old_error_model/tf-approximate'
+tfapprox_path: '/path/to/tf-approximate'
 
 # Name of the CNN application
 application: 'resnet18_cifar10'

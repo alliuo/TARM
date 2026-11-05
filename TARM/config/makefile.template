@@ -40,7 +40,7 @@ units := {UNITS}
 
 # compile
 com:
-\t${{VCS}} /home/lao/IH28HK12T_V1p0/IH28HK_VHS_V1p0_basic/IH28HK_VHS_RVT_V1p0/verilog/IH28HK_VHS_RVT.v ../mapped/${{MUL}}_synthesized.v ./tb/${{MUL}}_tb.v;
+\t${{VCS}} /path/to/standard_cell_library/verilog/standard_cells.v ../mapped/${{MUL}}_synthesized.v ./tb/${{MUL}}_tb.v;
 
 # simulation
 sim:

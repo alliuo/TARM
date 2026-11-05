@@ -1,5 +1,5 @@
-set search_path         ". /home/lao/IH28HK12T_V1p0/IH28HK_VHS_V1p0_basic/IH28HK_VHS_RVT_V1p0/synopsys"
-set target_library      "ih28hk_vhs_rvt_tt_0p90_25c_basic.db"
+set search_path         ". /path/to/standard_cell_library/synopsys"
+set target_library      "standard_cells.db"
 set link_library        "* $target_library"
 
 set top "{UNIT_NAME}"
