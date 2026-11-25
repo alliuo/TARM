@@ -42,3 +42,17 @@ cd TARM
 python main.py
 ```
 
+## Citation
+
+If you use TARM in your research, please cite the following paper:
+
+```bibtex
+@article{liu2026tarm,
+  author  = {Liu, Ao and Hu, Xiaolu and Zhang, Wenhui and Liu, Siting and
+             Wang, Hui and Wang, Qin and Mao, Zhigang and Han, Jie and Jiang, Honglan},
+  title   = {Application-Specific Approximate Multiplier Synthesis Based on Truth Table Evolution for {CNNs}},
+  journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+  year    = {2026},
+  doi     = {10.1109/TCAD.2026.3752284}
+}
+```
